@@ -109,7 +109,7 @@ func channelsListByUsername(service *youtube.Service, part string, forUsername s
   call = call.ForUsername(forUsername)
   response, err := call.Do()
   handleError(err, "")
-  fmt.Println(fmt.Sprintf("This channel's ID is UCnL8vVmpKY8ZmfSwoikavHQ. Its title is '%s', " +
+  fmt.Println(fmt.Sprintf("This channel's ID is %s. Its title is '%s', " +
               "and it has %d views.",
               response.Items[0].Id,
               response.Items[0].Snippet.Title,
